@@ -23,7 +23,7 @@ button {
     height: 100%;
     background-color: #1d1d20;
     animation-name: loading-spinner;
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
 
@@ -37,7 +37,7 @@ button {
         opacity: 1;
     }
 
-    50% {
+    70% {
         opacity: 1;
         z-index: 2;
     }
@@ -136,7 +136,7 @@ button {
     height: 100px;
     background-color: transparent;
     border-radius: 5px;
-    filter: blur(2px);
+
 }
 
 .border-left {
@@ -149,6 +149,32 @@ button {
 
     border-bottom: 10px #cccccc solid;
     border-right: 10px #cccccc solid;
+}
+
+.border-left::after {
+    filter: blur(2px);
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border-radius: 5px;
+    content: "";
+    border-top: 5px #cccccc solid;
+    border-left: 5px #cccccc solid;
+}
+
+.border-right::after {
+    filter: blur(2px);
+    border-bottom: 5px #cccccc solid;
+    border-right: 5px #cccccc solid;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border-radius: 5px;
+    content: "";
 
 }
 
@@ -206,6 +232,26 @@ button {
     100% {
         opacity: 1;
         transform: translateY(0%)
+    }
+}
+
+.main-image-animation {
+    animation-name: image-animation;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    transform-origin: left;
+}
+
+@keyframes image-animation {
+    0% {
+        opacity: 0;
+        transform: scaleX(0%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scaleX(100%);
+
     }
 }
 
@@ -296,10 +342,36 @@ button {
     transition-duration: 0.3s;
 }
 
+.secondary-button-display-none {
+    opacity: 0;
+}
+
 .secondary-button-animation {
-    animation-name: slide-in;
-    animation-duration: 1s;
+    animation-name: slide-left;
+    animation-duration: 2s;
     animation-timing-function: ease-in-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes slide-left {
+    0% {
+        opacity: 0;
+        -ms-transform: skewX(-20deg);
+        /* IE 9 */
+        -webkit-transform: skewX(-20deg);
+        /* Safari */
+        transform: skewX(-20deg);
+    }
+
+    100% {
+        opacity: 1;
+        -ms-transform: skewX(-20deg);
+        /* IE 9 */
+        -webkit-transform: skewX(-20deg);
+        /* Safari */
+        transform: skewX(-20deg);
+
+    }
 }
 
 .secondary-button:hover {

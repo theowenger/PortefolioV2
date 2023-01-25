@@ -1,35 +1,35 @@
 const presentationArray = [
-    '<button class="secondary-button" id="secondary-button01">Qui je suis</button>',
-    '<button class="secondary-button" id="secondary-button02">Le passé</button>',
-    '<button class="secondary-button" id="secondary-button03">L\'avenir</button>',
-    '<button class="secondary-button" id="secondary-button04">Mes passions</button>'
+    '<button class="secondary-button secondary-button-display-none" id="secondary-button01">Qui je suis</button>',
+    '<button class="secondary-button secondary-button-display-none" id="secondary-button02">Le passé</button>',
+    '<button class="secondary-button secondary-button-display-none" id="secondary-button03">L\'avenir</button>',
+    '<button class="secondary-button secondary-button-display-none" id="secondary-button04">Mes passions</button>'
 ]
 
 const projectArray = [
-    '<button class="secondary-button" id="secondary-button01">NPC Factory</button>',
-    '<button class="secondary-button" id="secondary-button02">KASA</button>',
-    '<button class="secondary-button" id="secondary-button03">Kanap</button>',
-    '<button class="secondary-button" id="secondary-button04">OhMyFood</button>',
-    '<button class="secondary-button" id="secondary-button05">Booki</button>',
-    '<button class="secondary-button" id="secondary-button06">Piiquante</button>',
+    '<button class="secondary-button secondary-button-display-none" id="secondary-button01">NPC Factory</button>',
+    '<button class="secondary-button secondary-button-display-none" id="secondary-button02">KASA</button>',
+    '<button class="secondary-button secondary-button-display-none" id="secondary-button03">Kanap</button>',
+    '<button class="secondary-button secondary-button-display-none" id="secondary-button04">OhMyFood</button>',
+    '<button class="secondary-button secondary-button-display-none" id="secondary-button05">Booki</button>',
+    '<button class="secondary-button secondary-button-display-none" id="secondary-button06">Piiquante</button>',
 ]
 
 const technoArray = [
-    '<button class="secondary-button" id="secondary-button01">Javascript</button>',
-    '<button class="secondary-button" id="secondary-button02">React</button>',
-    '<button class="secondary-button" id="secondary-button03">HTML</button>',
-    '<button class="secondary-button" id="secondary-button04">CSS</button>',
-    '<button class="secondary-button" id="secondary-button05">GitHub</button>',
-    '<button class="secondary-button" id="secondary-button06">MongoDB</button>',
-    '<button class="secondary-button" id="secondary-button07">SASS</button>',
-    '<button class="secondary-button" id="secondary-button08">Node.js</button>',
+    '<button class="secondary-button secondary-button-display-none" id="secondary-button01">Javascript</button>',
+    '<button class="secondary-button secondary-button-display-none" id="secondary-button02">React</button>',
+    '<button class="secondary-button secondary-button-display-none" id="secondary-button03">HTML</button>',
+    '<button class="secondary-button secondary-button-display-none" id="secondary-button04">CSS</button>',
+    '<button class="secondary-button secondary-button-display-none" id="secondary-button05">GitHub</button>',
+    '<button class="secondary-button secondary-button-display-none" id="secondary-button06">MongoDB</button>',
+    '<button class="secondary-button secondary-button-display-none" id="secondary-button07">SASS</button>',
+    '<button class="secondary-button secondary-button-display-none" id="secondary-button08">Node.js</button>',
 ]
 
 const contactArray = [
-    '<button class="secondary-button" id="secondary-button01">Adresse</button>',
-    '<button class="secondary-button" id="secondary-button02">Mail / Telephone</button>',
-    '<button class="secondary-button" id="secondary-button03">Reseaux</button>',
-    '<button class="secondary-button" id="secondary-button04">CV en ligne</button>',
+    '<button class="secondary-button secondary-button-display-none" id="secondary-button01">Adresse</button>',
+    '<button class="secondary-button secondary-button-display-none" id="secondary-button02">Mail / Telephone</button>',
+    '<button class="secondary-button secondary-button-display-none" id="secondary-button03">Reseaux</button>',
+    '<button class="secondary-button secondary-button-display-none" id="secondary-button04">CV en ligne</button>',
 
 ]
 
@@ -188,11 +188,22 @@ mainButton04.addEventListener('click', displayButtonContact)
 for (let i = 0; i < allMainButtons.length; i++) {
     //ecoute le clik sur chaque bouton
     allMainButtons[i].addEventListener("click", ActiveBtn);
+    allMainButtons[i].addEventListener("click", AnimationBtn);
+}
+
+function AnimationBtn() {
+    let secondaryButtons = document.querySelectorAll('.secondary-button');
+    for (let i = 0; i < secondaryButtons.length; i++) {
+        setTimeout(function () {
+            secondaryButtons[i].classList.remove('secondary-button-display-none')
+            secondaryButtons[i].classList.add('secondary-button-animation');
+        }, 200 * i);
+    }
+
 }
 
 function ActiveBtn() {
     let secondaryButtons = document.querySelectorAll('.secondary-button');
-
     for (let i = 0; i < secondaryButtons.length; i++) {
         secondaryButtons[i].addEventListener('mouseover', function () {
             this.style.borderColor = "#e0acd5";
@@ -209,7 +220,6 @@ function ActiveBtn() {
     setTimeout(function () {
         mainContent.classList.remove('main-content-animation')
     }, 1000)
-
     for (let i = 0; i < allMainButtons.length; i++) {
         allMainButtons[i].style.borderColor = "white";
     }
@@ -218,6 +228,7 @@ function ActiveBtn() {
         mainBorderLeft.style.borderColor = "#3abeff";
         mainBorderRight.style.borderColor = "#3abeff";
         secondaryNavigation.style.borderColor = "#3abeff";
+        mainImage.style.borderColor = "#3abeff"
         for (let i = 0; i < secondaryButtons.length; i++) {
             secondaryButtons[i].addEventListener('mouseover', function () {
                 this.style.borderColor = "#3abeff";
@@ -229,7 +240,7 @@ function ActiveBtn() {
                 this.style.backgroundColor = "#3abeff";
             });
             secondaryButtons[i].addEventListener('focusout', function () {
-                this.style.backgroundColor = "black";
+                this.style.backgroundColor = "#1d1d20";
             });
         }
     }
@@ -238,6 +249,7 @@ function ActiveBtn() {
         mainBorderLeft.style.borderColor = "#fdca40";
         mainBorderRight.style.borderColor = "#fdca40";
         secondaryNavigation.style.borderColor = "#fdca40";
+        mainImage.style.borderColor = "#fdca40"
         for (let i = 0; i < secondaryButtons.length; i++) {
             secondaryButtons[i].addEventListener('mouseover', function () {
                 this.style.borderColor = "#fdca40";
@@ -249,7 +261,7 @@ function ActiveBtn() {
                 this.style.backgroundColor = "#fdca40";
             });
             secondaryButtons[i].addEventListener('focusout', function () {
-                this.style.backgroundColor = "black";
+                this.style.backgroundColor = "#1d1d20";
             });
         }
     }
@@ -258,6 +270,7 @@ function ActiveBtn() {
         mainBorderLeft.style.borderColor = "#e0acd5";
         mainBorderRight.style.borderColor = "#e0acd5";
         secondaryNavigation.style.borderColor = "#e0acd5";
+        mainImage.style.borderColor = "#e0acd5";
         for (let i = 0; i < secondaryButtons.length; i++) {
             secondaryButtons[i].addEventListener('mouseover', function () {
                 this.style.borderColor = "#e0acd5";
@@ -269,7 +282,7 @@ function ActiveBtn() {
                 this.style.backgroundColor = "#e0acd5";
             });
             secondaryButtons[i].addEventListener('focusout', function () {
-                this.style.backgroundColor = "black";
+                this.style.backgroundColor = "#1d1d20";
             });
         }
     }
@@ -278,6 +291,7 @@ function ActiveBtn() {
         mainBorderLeft.style.borderColor = "#32936f";
         mainBorderRight.style.borderColor = "#32936f";
         secondaryNavigation.style.borderColor = "#32936f";
+        mainImage.style.borderColor = "#32936f";
         for (let i = 0; i < secondaryButtons.length; i++) {
             secondaryButtons[i].addEventListener('mouseover', function () {
                 this.style.borderColor = "#32936f";
@@ -289,7 +303,7 @@ function ActiveBtn() {
                 this.style.backgroundColor = "#32936f";
             });
             secondaryButtons[i].addEventListener('focusout', function () {
-                this.style.backgroundColor = "black";
+                this.style.backgroundColor = "#1d1d20";
             });
         }
     }
@@ -367,6 +381,10 @@ function displayContent() {
         mainTitle.innerHTML = content.text;
         mainImage.src = content.image;
         mainDescription.innerHTML = content.description;
+        mainImage.classList.add('main-image-animation')
+        setTimeout(function () {
+            mainImage.classList.remove('main-image-animation')
+        }, 1000)
         if (content.link === undefined) {
             mainLink.innerHTML = ""
         } else {
