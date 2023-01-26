@@ -37,102 +37,102 @@ const contentMap = {
     "Qui je suis": {
         text: "Qui je suis",
         image: "./img/theo-picture.jpg",
-        description: "Je m'appelle Théo Wenger, je suis un développeur Web vivant à Nîmes dans le sud de la france. J'ai entamé ma reconversion en été 2022 et je suis vite tombé dans le cercle vertueux de la programation. Je maitrise de nombreuses technologies que je mets au service de projets de développement web."
+        description: "Je m'appelle Théo Wenger et je suis un développeur web passionné basé à Nîmes, dans le Sud de la France. L'été 2022 a été le début d'une nouvelle aventure pour moi, lorsque j'ai décidé de me reconvertir dans le développement web. Depuis, je me suis plongé avec enthousiasme dans l'apprentissage de nombreuses technologies, que je mets maintenant au service de projets passionnants."
     },
     "Le passé": {
         text: "Le passé",
         image: "./img/clock.png",
-        description: "Je me suis integré à la vie active dès l'age de 17 ans. J'y ai découvert un monde riche d'enseignements qui m'ont forgé une conscience professionnelle via les differents corps de metiers que j'ai pratiqué. Je me suis rapidement dirigé vers le conseil et la vente de produits qui m'ont prodigué la capacité d'ecoute active, d'echange et de dynamisme."
+        description: "Dès l'âge de 17 ans, j'ai commencé à travailler et j'ai découvert un univers riche d'expériences qui m'ont permis de développer une forte conscience professionnelle. J'ai exploré différents domaines, mais j'ai rapidement compris que ma passion était dans le conseil et la vente de produits. Cette expérience m'a donné les compétences clés telles que l'écoute active, la capacité à communiquer efficacement et un dynamisme qui me caractérise aujourd'hui encore."
     },
     "L'avenir": {
         text: "L'avenir",
         image: "./img/futur.png",
-        description: "Aujourd'hui je suis développeur web titulaire d'une formation certifiée par l'état (bac+2). Je désire faire mes preuves et mettre à disposition mes competences dans une entreprise inspirante et bienveillante."
+        description: "Actuellement diplômé en développement web avec une formation certifiée par l'état (bac+2), je suis prêt à relever de nouveaux défis et à mettre mes compétences à disposition d'une entreprise inspirante et bienveillante où je pourrais continuer à apprendre et à grandir professionnellement. Je suis motivé à prouver mes capacités et à contribuer au succès de l'entreprise."
     },
     "Mes passions": {
         text: "Mes passions",
         image: "./img/piano.png",
-        description: "Ayant toujours été attiré par le domaine artistique, je pratique la musique en autodidacte. Je lit egalement toutes sorte d'ouvrage (Roman, BD, manga) et, attiré par les multiples univers digitaux, j'ai pris la descision de mettre en pratique mes connaissances en programation pour développer des solutions à la fois pratiques et artistiques."
+        description: "La passion pour l'art a toujours été présente dans ma vie. En plus de pratiquer la musique de manière autodidacte, j'aime également découvrir de nouveaux univers à travers la lecture de romans, de bandes dessinées et de mangas. Mon amour pour les univers digitaux m'a conduit à utiliser mes connaissances en programmation pour développer des solutions qui combinent l'utilité et la créativité. Je suis très excité à l'idée de continuer à explorer les possibilités offertes par le développement web pour faire passer mes idées à la réalité."
     },
     "NPC Factory": {
         text: "NPC Factory",
         image: "./img/logo-npc-factory.png",
-        description: "NPC Factory est un site web de creation et de partage de PNJ(personnages non jouables) pour les parties de jeu de roles.Ce project personnel reunit tout ce que j'ai apprit lors de ma formation. On peut creer un compte, se connecter et creer des PNJ qui seront vus par l'ensembles des utilisateurs. ",
+        description: "NPC Factory est un projet personnel qui m'a permis de mettre en pratique toutes les compétences que j'ai acquises lors de ma formation en développement web. Il s'agit d'un site web qui permet aux utilisateurs de créer et de partager des personnages non joueurs (PNJ) pour des parties de jeux de rôles. Les utilisateurs peuvent créer un compte, se connecter et créer des PNJ qui seront visibles par tous les autres utilisateurs. Ce projet est un exemple concret de ma capacité à utiliser mes connaissances pour créer une solution pratique et fonctionnelle.",
         link: '<a class="link-project" target="_blank" href="https://github.com/theowenger/NPC-gallery">GitHub</a>'
     },
     "KASA": {
         text: "KASA",
         image: "./img/KASA.png",
-        description: "Ce projet OpenClassRooms de locations d'appartements m'a permis de decouvrir et maitriser les bases de React. Le site utilise le cycle de vie des composants de manière dynamique ainsi qu'une logique de route pour naviguer sur les differentes pages.",
+        description: "Le projet OpenClassRooms de location d'appartements était l'occasion pour moi de découvrir et de maîtriser les fondements de React. Ce site web a été développé en utilisant les concepts de cycle de vie des composants et de logique de routage pour une navigation fluide entre les différentes pages. Cela m'a permis de démontrer mes compétences en utilisant les dernières technologies pour créer une expérience utilisateur intuitive et efficace.",
         link: '<a class="link-project" target="_blank" href="https://github.com/theowenger/KASA">GitHub</a>'
     },
     "Kanap": {
         text: "Kanap",
         image: "./img/kanap.png",
-        description: "Kanap est le premier projet OpenClassRooms utilisant du Javascript Vanilla. On y trouvera un site web de vente de canapés en ligne avec un systeme de panier pour gerer ses achats. Le projet utilise les fonctions du localStorage pour garder des informations en mémoire.",
+        description: "Kanap est un projet OpenClassRooms que j'ai réalisé en utilisant uniquement Javascript Vanilla. Il s'agit d'un site web de vente en ligne de canapés, avec un système de panier pour gérer les achats. J'ai utilisé les fonctions du localStorage pour stocker les informations dans la mémoire du navigateur, ce qui permet une expérience utilisateur plus fluide et agréable. Ce projet a été une excellente occasion pour moi de démontrer mes compétences en développement web et de mettre en pratique mes connaissances en Javascript Vanilla.",
         link: '<a class="link-project" target="_blank" href="https://github.com/theowenger/Kanap-Theo-Wenger">GitHub</a>'
 
     },
     "OhMyFood": {
         text: "OhMyFood",
         image: "./img/ohmyfood.svg",
-        description: "OhMyFood est un site web responsive de commande de repas à emporter. J'ai utilisé la technologie SASS pour la mise en page ainsi que des animations en CSS pour rendre le site plus vivant. Le responsive possède 3 versions: Desktop, tablette et telephone.",
+        description: "OhMyFood est un projet de site web de commande de repas à emporter que j'ai réalisé en utilisant la technologie SASS pour la mise en page. J'ai également intégré des animations en CSS pour donner plus de vie au site. Ce site web est également responsive, avec une version adaptée pour les ordinateurs de bureau, les tablettes et les téléphones, permettant une expérience utilisateur optimale quel que soit l'appareil utilisé. Ce projet m'a permis de mettre en pratique mes connaissances en design et en animations pour créer un site web attractif et fonctionnel.",
         link: '<a class="link-project" target="_blank" href="https://github.com/theowenger/OhMyFood">GitHub</a>'
 
     },
     "Booki": {
         text: "Booki",
         image: "./img/booki.png",
-        description: "Booki est site de réservation d'appartements. En m'appuyant d'une maquette Figma j'ai réalisé la page web au pixel près. Le projet comporte une grande partie de mise en page à l'aide des flexbox.",
+        description: "Booki est un projet de site de réservation d'appartements que j'ai réalisé en utilisant une maquette Figma pour le design. J'ai mis un point d'honneur à reproduire le design au pixel près, ce qui a demandé une grande attention aux détails. J'ai également utilisé les flexbox pour la mise en page, ce qui a permis de créer un site web élégant et facile à utiliser. Avec ce projet, j'ai acquis les bases pour créer un site web moderne et fonctionnel.",
         link: '<a class="link-project" target="_blank" href="https://github.com/theowenger/Booki">GitHub</a>'
 
     },
     "Piiquante": {
         text: "Piiquante",
         image: "./img/Piiquante.png",
-        description: "Premier projet BackEnd de ma formation, Piiquante est un site web de creations et de partages de sauces épicées. Il a fallu creer un serveur Node.js connecté à l'application FrontEnd de manière à pouvoir creer un compte, se connecter, creer et modifer des sauces.",
+        description: "Piiquante est mon premier projet de développement Back-End, réalisé dans le cadre de ma formation. Il s'agit d'un site web de création et de partage de sauces épicées. J'ai dû mettre en place un serveur Node.js connecté à l'application Front-End, permettant aux utilisateurs de créer un compte, de se connecter, de créer et de modifier des sauces. Ce projet m'a permis de solidifier mes compétences en développement Back-End, en connectant les différentes parties d'un site web pour créer une expérience utilisateur fluide et fonctionnelle.",
         link: '<a class="link-project" target="_blank" href="https://github.com/theowenger/piiquante-P6">GitHub</a>'
 
     },
     "Javascript": {
         text: "Javascript",
         image: "./img/javascript.jfif",
-        description: "Depuis que j'ai découvert le Javascript, je me passionne pour la manipulation du DOM et de toutes les possibilités qu'offre ce language. Utilisable autant coté Front que Back, JS permet de gerer des projets complets sans avoir à changer de syntaxe."
+        description: "Le Javascript est un outil merveilleux que j'applique avec methodologie depuis que j'ai découvert toutes les possibilités qu'il offre pour manipuler le DOM. Que ce soit pour les projets Front ou Back-End, JS me permet de gérer des projets complets avec une seule et même syntaxe, cela me permet de me concentrer sur les fonctionnalités de mon projet."
     },
     "React": {
         text: "React",
         image: "./img/react.png",
-        description: "Cette librairie JS offre une grande liberté de création tout en restant suffisament solide pour garder les projets maintenables. Une fois le Javascript maitrisé, je me suis concentré à dompter React de manière à garder un code propre et modifiable."
-    },
-    "HTML": {
-        text: "HTML",
-        image: "./img/html.jfif",
-        description: "Pierre angulaire du développement web, HTML5 est une base que j'ai solidifié de manière à respecter les conventions W3C ainsi que les normes de SEO."
-    },
-    "CSS": {
-        text: "CSS",
-        image: "./img/css.jfif",
-        description: "Le CSS est facile à apprendre mais difficile à maitriser. Je travail regulièrement mes competences en CSS afin de proposer des designs soignés et une UI/UX logique et comprehensible du premier coup d'oeil."
-    },
-    "GitHub": {
-        text: "GitHub",
-        image: "./img/github.jfif",
-        description: "J'ai pris l'habitude de commit regulierement mes projets en opensource afin de faire partager mon travail à la communauté."
-    },
-    "MongoDB": {
-        text: "MongoDB",
-        image: "./img/mongodb.jfif",
-        description: "J'ai eu l'occasion d'utiliser MongoDB dans differents projets afin de me familiariser avec les bases de données NoSQL et les connecter à mes differentes API."
-    },
-    "SASS": {
-        text: "SASS",
-        image: "./img/sass.jfif",
-        description: "J'utilise SAAS et le SCSS sur des gros projets pour garder une maintenabilité dans mon code et gagner en temps et en lisibilité."
+        description: "React est une librairie Javascript qui m'a permis de découvrir de nouvelles possibilités de création tout en gardant une grande flexibilité pour maintenir les projets. Ayant une bonne maîtrise du Javascript, j'ai pu me concentrer sur l'apprentissage de React pour écrire des codes propres et facilement modifiables."
     },
     "Node.js": {
         text: "Node.js",
         image: "./img/node.png",
-        description: "Grace à node.js, je suis en mesure de creer des API connectées et configurables sur differents projets FrontEnd."
+        description: "Node.js est un outil puissant qui m'a permis de développer des applications web complètes en utilisant JavaScript. Cette technologie permet de créer des serveurs performants et évolutifs, connectant facilement les données à l'interface utilisateur pour une expérience utilisateur fluide. Je l'utilise régulièrement pour créer des API personnalisées qui peuvent être facilement intégrées à tout projet Front-End. En utilisant Node.js, je suis en mesure de créer des applications web dynamiques et performantes."
+    },
+    "HTML": {
+        text: "HTML",
+        image: "./img/html.jfif",
+        description: "Le HTML5 est la pierre angulaire du développement web, c'est pourquoi je me suis efforcé de le maîtriser de manière à respecter les normes W3C et les bonnes pratiques SEO. Cela me permet de créer des sites web standards et bien structurés."
+    },
+    "CSS": {
+        text: "CSS",
+        image: "./img/css.jfif",
+        description: "En utilisant des outils tels que SASS et CSS Grid, je peux créer des designs réactifs et modernes tout en maintenant une structure de code propre et facile à maintenir. Je m'efforce également de suivre les dernières tendances en matière de design pour offrir des designs contemporains à mes projets."
+    },
+    "SASS": {
+        text: "SASS",
+        image: "./img/sass.jfif",
+        description: "SASS est une évidence lorsque j'aborde des projets web de grande envergure. Son système de variables, de boucles et de fonctions m'a permis de rationaliser mon code CSS et de gagner en efficacité. J'utilise également SCSS pour bénéficier de la puissance des fonctionnalités avancées de SASS, tout en maintenant une syntaxe proche de celle de CSS pour une meilleure lisibilité."
+    },
+    "MongoDB": {
+        text: "MongoDB",
+        image: "./img/mongodb.jfif",
+        description: "MongoDB est devenu un incontournable pour moi dans le développement de projets web. J'ai eu l'opportunité de mettre en pratique mes connaissances en utilisant cette base de données NoSQL pour connecter mes différentes API. La flexibilité de MongoDB a été un vrai plus pour moi, permettant de stocker et d'organiser les données de manière efficace, tout en étant facile à utiliser et à comprendre. C'est un outil que je continuerai à utiliser pour mes projets futurs."
+    },
+    "GitHub": {
+        text: "GitHub",
+        image: "./img/github.jfif",
+        description: "GitHub est également un outil indispensable pour la collaboration sur des projets en équipe, avec des fonctionnalités telles que les pull requests et les branches, qui facilitent la gestion des contributions et des modifications de code. Je m'efforce de maintenir un code clair et documenté pour que mes projets soient faciles à comprendre et à utiliser pour d'autres développeurs."
     },
     "Adresse": {
         text: "Adresse",
@@ -147,7 +147,7 @@ const contentMap = {
     "Reseaux": {
         text: "Reseaux",
         image: "./img/social.webp",
-        description: "Description de Reseaux"
+        description: "Je suis présent sur les réseaux sociaux professionnels tels que LinkedIn et Twitter afin de partager mes connaissances et mon expérience dans le développement web avec la communauté. Je maintiens une présence active sur ces plateformes en partageant mes projets et en discutant avec d'autres développeurs. Cela me permet également de rester informé des dernières tendances et des nouvelles technologies."
     },
     "CV en ligne": {
         text: "CV en ligne",
@@ -192,6 +192,7 @@ for (let i = 0; i < allMainButtons.length; i++) {
 }
 
 function AnimationBtn() {
+
     let secondaryButtons = document.querySelectorAll('.secondary-button');
     for (let i = 0; i < secondaryButtons.length; i++) {
         setTimeout(function () {
@@ -381,10 +382,12 @@ function displayContent() {
         mainTitle.innerHTML = content.text;
         mainImage.src = content.image;
         mainDescription.innerHTML = content.description;
+        mainDescription.classList.add('main-description-animation')
         mainImage.classList.add('main-image-animation')
         setTimeout(function () {
+            mainDescription.classList.remove('main-description-animation')
             mainImage.classList.remove('main-image-animation')
-        }, 1000)
+        }, 500)
         if (content.link === undefined) {
             mainLink.innerHTML = ""
         } else {

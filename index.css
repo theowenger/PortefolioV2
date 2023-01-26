@@ -194,6 +194,26 @@ button {
     padding-right: 5%;
 }
 
+.main-description-animation {
+    animation-name: description-animation;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    transform-origin: left;
+}
+
+@keyframes description-animation {
+    0% {
+        opacity: 0;
+        transform: scaleX(0.9);
+    }
+
+
+    100% {
+        opacity: 1;
+        transform: scaleX(1)
+    }
+}
+
 .main-link {
     padding-left: 5%;
     padding-right: 5%;
@@ -237,20 +257,20 @@ button {
 
 .main-image-animation {
     animation-name: image-animation;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-timing-function: ease-in-out;
-    transform-origin: left;
+    transform-origin: top;
 }
 
 @keyframes image-animation {
     0% {
         opacity: 0;
-        transform: scaleX(0%);
+        transform: scaleY(0%);
     }
 
     100% {
         opacity: 1;
-        transform: scaleX(100%);
+        transform: scaleY(100%);
 
     }
 }
