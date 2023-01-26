@@ -314,7 +314,7 @@ function displayButtonPresentation() {
     secondaryNavigation.innerHTML = ""
     mainLink.innerHTML = ""
     mainImage.src = "./img/presentation.jfif"
-    mainTitle.innerHTML = "presentation"
+    mainTitle.innerHTML = "Presentation"
     mainDescription.innerHTML = "Vous voulez en savoir plus sur moi? parcourez cette section pour faire un tour d'horizon de qui je suis.";
     secondaryNavigationTitle.innerHTML = "Je me presente"
     presentationArray.forEach(element => {
