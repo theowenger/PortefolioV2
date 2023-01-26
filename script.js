@@ -360,7 +360,7 @@ function displayButtonContact() {
     mainLink.innerHTML = ""
     mainImage.src = "./img/contact.png"
     mainTitle.innerHTML = "comment me joindre?"
-    mainDescription.innerHTML = "Vous desirez me contacter? En savoir plus ou tout simplement parler dev? Ca se passe içi..."
+    mainDescription.innerHTML = "<p>Vous desirez me contacter? En savoir plus sur moi ou tout simplement parler dev?</p> <p>Ca se passe içi...</p>"
     secondaryNavigationTitle.innerHTML = "Me contacter"
     contactArray.forEach(element => {
         let newButton = document.createElement("nav");
