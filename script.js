@@ -42,17 +42,17 @@ const contentMap = {
     "Le passé": {
         text: "Le passé",
         image: "./img/clock.png",
-        description: "Dès l'âge de 17 ans, j'ai commencé à travailler et j'ai découvert un univers riche d'expériences qui m'ont permis de développer une forte conscience professionnelle. J'ai exploré différents domaines, mais j'ai rapidement compris que ma passion était dans le conseil et la vente de produits. Cette expérience m'a donné les compétences clés telles que l'écoute active, la capacité à communiquer efficacement et un dynamisme qui me caractérise aujourd'hui encore."
+        description: "Dès l'âge de 17 ans, j'ai commencé à travailler et j'ai découvert un univers riche d'expériences qui m'ont permis de développer une forte conscience professionnelle. J'ai exploré différents domaines, et je me suis rapidement tourné vers le conseil et la vente de produits. Cette expérience m'a donné des compétences clés telles que l'écoute active, la capacité à communiquer efficacement et un dynamisme qui me caractérise aujourd'hui encore."
     },
     "L'avenir": {
         text: "L'avenir",
         image: "./img/futur.png",
-        description: "Actuellement diplômé en développement web avec une formation certifiée par l'état (bac+2), je suis prêt à relever de nouveaux défis et à mettre mes compétences à disposition d'une entreprise inspirante et bienveillante où je pourrais continuer à apprendre et à grandir professionnellement. Je suis motivé à prouver mes capacités et à contribuer au succès de l'entreprise."
+        description: "Actuellement diplômé en développement web avec une formation certifiée par l'état (bac+2), je suis prêt à relever de nouveaux défis et à mettre mes compétences à disposition d'une entreprise inspirante et bienveillante où je pourrais continuer à apprendre et à grandir professionnellement. Je suis motivé à mettre mes capacités à contribution du succès de l'entreprise."
     },
     "Mes passions": {
         text: "Mes passions",
         image: "./img/piano.png",
-        description: "La passion pour l'art a toujours été présente dans ma vie. En plus de pratiquer la musique de manière autodidacte, j'aime également découvrir de nouveaux univers à travers la lecture de romans, de bandes dessinées et de mangas. Mon amour pour les univers digitaux m'a conduit à utiliser mes connaissances en programmation pour développer des solutions qui combinent l'utilité et la créativité. Je suis très excité à l'idée de continuer à explorer les possibilités offertes par le développement web pour faire passer mes idées à la réalité."
+        description: "La passion pour l'art a toujours été présente dans ma vie. En plus de pratiquer la musique de manière autodidacte, j'aime également découvrir de nouveaux univers à travers la lecture de romans, de bandes dessinées et de mangas. Mon amour pour les univers digitaux m'a conduit à utiliser mes connaissances en programmation pour développer des solutions qui combinent l'utilité et la créativité. Je suis determiné à explorer les possibilités offertes par le développement web pour faire passer mes idées à la réalité."
     },
     "NPC Factory": {
         text: "NPC Factory",
@@ -211,8 +211,9 @@ function ActiveBtn() {
         });
     }
     let currentBtn = document.getElementsByClassName("active");
-    //retire la classe active sur le bouton courant
-    currentBtn[0].classList.remove('active');
+    for (let i = 0; i < currentBtn.length; i++) {
+        currentBtn[i].classList.remove('active');
+    }
     //ajoute la classe active sur le nouveau bouton
     this.classList.add('active');
 
@@ -315,7 +316,7 @@ function displayButtonPresentation() {
     mainLink.innerHTML = ""
     mainImage.src = "./img/presentation.jfif"
     mainTitle.innerHTML = "Presentation"
-    mainDescription.innerHTML = "Vous voulez en savoir plus sur moi? parcourez cette section pour faire un tour d'horizon de qui je suis.";
+    mainDescription.innerHTML = "Vous voulez découvrir mon histoire, mes ambitions et ma personnalité? C'est içi que ca se passe.";
     secondaryNavigationTitle.innerHTML = "Je me presente"
     presentationArray.forEach(element => {
         let newButton = document.createElement("nav");
@@ -360,7 +361,7 @@ function displayButtonContact() {
     mainLink.innerHTML = ""
     mainImage.src = "./img/contact.png"
     mainTitle.innerHTML = "comment me joindre?"
-    mainDescription.innerHTML = "<p>Vous desirez me contacter? En savoir plus sur moi ou tout simplement parler dev?</p> <p>Ca se passe içi...</p>"
+    mainDescription.innerHTML = "<p>Vous desirez me contacter? En savoir plus sur moi ou tout simplement parler developpement Web?</p> <p>Ca se passe içi...</p>"
     secondaryNavigationTitle.innerHTML = "Me contacter"
     contactArray.forEach(element => {
         let newButton = document.createElement("nav");

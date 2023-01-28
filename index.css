@@ -263,7 +263,7 @@ button {
 @keyframes image-animation {
     0% {
         opacity: 0;
-        transform: scaleX(0%);
+        transform: scaleX(50%);
     }
 
     100% {
