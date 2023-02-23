@@ -257,18 +257,18 @@ button {
     animation-name: image-animation;
     animation-duration: 0.5s;
     animation-timing-function: ease-in-out;
-    transform-origin: left;
+    transform-origin: top;
 }
 
 @keyframes image-animation {
     0% {
         opacity: 0;
-        transform: scaleX(50%);
+        transform: scaleY(50%);
     }
 
     100% {
         opacity: 1;
-        transform: scaleX(100%);
+        transform: scaleY(100%);
     }
 }
 

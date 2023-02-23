@@ -12,6 +12,7 @@ const projectArray = [
     '<button class="secondary-button secondary-button-display-none" id="secondary-button04">OhMyFood</button>',
     '<button class="secondary-button secondary-button-display-none" id="secondary-button05">Booki</button>',
     '<button class="secondary-button secondary-button-display-none" id="secondary-button06">Piiquante</button>',
+    '<button class="secondary-button secondary-button-display-none" id="secondary-button07">Pokedex</button>',
 ]
 
 const technoArray = [
@@ -60,11 +61,17 @@ const contentMap = {
         description: "NPC Factory est un projet personnel qui m'a permis de mettre en pratique toutes les compétences que j'ai acquises lors de ma formation en développement web. Il s'agit d'un site web qui permet aux utilisateurs de créer et de partager des personnages non joueurs (PNJ) pour des parties de jeux de rôles. Les utilisateurs peuvent créer un compte, se connecter et créer des PNJ qui seront visibles par tous les autres utilisateurs. Ce projet est un exemple concret de ma capacité à utiliser mes connaissances pour créer une solution pratique et fonctionnelle.",
         link: '<a class="link-project" target="_blank" href="https://github.com/theowenger/NPC-gallery">GitHub</a>'
     },
+    "Pokedex": {
+        text: "Pokedex",
+        image: "./img/pokemon.jpg",
+        description: "Voici un petit projet React qui avait pour objectif de me connecter à une API tierce afin d'en afficher le contenu. De fil en aiguille j'ai décidé de rentre le site moins austère en proposant une mise en page de pokedex intégralement faite en CSS.",
+        link: '<a class="link-project" target="_blank" href="https://github.com/theowenger/pokedex">GitHub</a> <a class="link-project" target="_blank" href="https://pokedex-wenger-theo.netlify.app/">Site Internet</a>'
+    },
     "KASA": {
         text: "KASA",
         image: "./img/KASA.png",
         description: "Le projet OpenClassRooms de location d'appartements était l'occasion pour moi de découvrir et de maîtriser les fondements de React. Ce site web a été développé en utilisant les concepts de cycle de vie des composants et de logique de routage pour une navigation fluide entre les différentes pages. Cela m'a permis de démontrer mes compétences en utilisant les dernières technologies pour créer une expérience utilisateur intuitive et efficace.",
-        link: '<a class="link-project" target="_blank" href="https://github.com/theowenger/KASA">GitHub</a>'
+        link: '<a class="link-project" target="_blank" href="https://github.com/theowenger/KASA">GitHub</a> <a class="link-project" target="_blank" href="https://kasa-theo-wenger.netlify.app/">Site Internet</a>'
     },
     "Kanap": {
         text: "Kanap",
@@ -77,14 +84,15 @@ const contentMap = {
         text: "OhMyFood",
         image: "./img/ohmyfood.svg",
         description: "OhMyFood est un projet de site web de commande de repas à emporter que j'ai réalisé en utilisant la technologie SASS pour la mise en page. J'ai également intégré des animations en CSS pour donner plus de vie au site. Ce site web est également responsive, avec une version adaptée pour les ordinateurs de bureau, les tablettes et les téléphones, permettant une expérience utilisateur optimale quel que soit l'appareil utilisé. Ce projet m'a permis de mettre en pratique mes connaissances en design et en animations pour créer un site web attractif et fonctionnel.",
-        link: '<a class="link-project" target="_blank" href="https://github.com/theowenger/OhMyFood">GitHub</a>'
+        link: '<a class="link-project" target="_blank" href="https://github.com/theowenger/OhMyFood">GitHub</a> <a class="link-project" target="_blank" href="https://ohmyfood-theo-wenger.netlify.app/">Site Internet</a>'
 
     },
     "Booki": {
         text: "Booki",
         image: "./img/booki.png",
         description: "Booki est un projet de site de réservation d'appartements que j'ai réalisé en utilisant une maquette Figma pour le design. J'ai mis un point d'honneur à reproduire le design au pixel près, ce qui a demandé une grande attention aux détails. J'ai également utilisé les flexbox pour la mise en page, ce qui a permis de créer un site web élégant et facile à utiliser. Avec ce projet, j'ai acquis les bases pour créer un site web moderne et fonctionnel.",
-        link: '<a class="link-project" target="_blank" href="https://github.com/theowenger/Booki">GitHub</a>'
+        link: '<a class="link-project" target="_blank" href="https://github.com/theowenger/Booki">GitHub</a> <a class="link-project" target="_blank" href="https://booki-theo-wenger.netlify.app/">Site Internet</a>'
+
 
     },
     "Piiquante": {
